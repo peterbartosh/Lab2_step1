@@ -3,7 +3,6 @@
 Orders Table:  
 
 id Integer Primary Key Auto Increment  
-address Varchar(50)  
 date Timestamp  
 status Integer  
 preferencesComment Text  
