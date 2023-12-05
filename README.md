@@ -12,5 +12,5 @@ OrderProduct Table:
 
 id Integer Primary Key Auto Increment  
 orderId Integer  
-productId Integer  
+productName Text,
 amount Integer  
