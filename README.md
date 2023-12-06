@@ -3,7 +3,7 @@
 Orders Table:  
 
 id Integer Primary Key Auto Increment  
-date Timestamp  
+date_and_time Timestamp  
 status Integer  
 preferencesComment Text  
 location Decimal(2,7)  
