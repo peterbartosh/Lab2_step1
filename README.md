@@ -1,16 +1,18 @@
 # Lab2_step1
 
+Schema:
+
 Orders Table:  
+  date Date  
+  status Integer  
+  preferencesComment Text  
+  lattitude Decimal(2,7)  
+  longtitude Decimal(2,7) 
+  id Integer Primary Key Auto Increment  
 
-id Integer Primary Key Auto Increment  
-date_and_time Timestamp  
-status Integer  
-preferencesComment Text  
-location Decimal(2,7)  
-
-OrderProduct Table:  
-
-id Integer Primary Key Auto Increment  
-orderId Integer  
-productName Text,
-amount Integer  
+OrdersProducts Table:  
+  productName Text
+  amount Integer  
+  id Integer Primary Key Auto Increment  
+  orderId Integer
+  FOREIGN KEY(orderId) REFERENCES Orders(id)
